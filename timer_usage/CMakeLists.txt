@@ -2,6 +2,7 @@ project(timer_usage)
 
 add_executable(timer_basic basic_usage.cpp)
 add_executable(timer_repeated repeated.cpp)
+add_executable(timer_test timer_test.cpp)
 
 set(EXECUTABLE_OUTPUT_PATH ${BINARY_OUTPUT_DIR})
 
@@ -10,3 +11,6 @@ target_link_libraries(timer_basic ${CMAKE_THREAD_LIBS_INIT})
 
 target_include_directories(timer_repeated PRIVATE ${ASIO_INCLUDE_DIR})
 target_link_libraries(timer_repeated ${CMAKE_THREAD_LIBS_INIT})
+
+target_include_directories(timer_test PRIVATE ${ASIO_INCLUDE_DIR} ${CATCH_SINGLE_INCLUDE})
+target_link_libraries(timer_test ${CMAKE_THREAD_LIBS_INIT})
