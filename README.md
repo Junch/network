@@ -1,3 +1,5 @@
+![work branch status](https://github.com/Junch/network/actions/workflows/github-actions-build.yml/badge.svg?branch=work)
+
 # network
 学习asio的最多、最全、最有用、最容易学会的例子，功能与asio的examples不重叠。
 
